@@ -27,7 +27,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(cors({ origin: 'http://localhost:3000' }));
-app.use(cors({ origin: 'http://wsp-grades-app.herokuapp.com/' }));
+app.use(cors({ origin: 'https://wsp-grades-app.herokuapp.com' }));
 // app.use(
 //   cors({
 //     origin: 'https://wsp-grades-app.herokuapp.com/',
