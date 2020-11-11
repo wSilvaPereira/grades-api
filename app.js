@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(cors({ origin: 'http://localhost:3000' }));
 app.use(
   cors({
-    origin: 'https://wsp-grades-api.herokuapp.com',
+    origin: 'https://wsp-grades-app.herokuapp.com/',
   })
 );
 
