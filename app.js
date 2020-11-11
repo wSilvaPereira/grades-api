@@ -26,21 +26,7 @@ const app = express();
 //define o dominio de origem para consumo do servico
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(cors({ origin: 'http://localhost:3000' }));
 app.use(cors({ origin: 'https://wsp-grades-app.herokuapp.com' }));
-// app.use(
-//   cors({
-//     origin: 'https://wsp-grades-app.herokuapp.com/',
-//   })
-// );
-//https://wsp-grades-app.herokuapp.com/
-//https://wsp-grades-app.herokuapp.com/
-//https://wsp-grades-app.herokuapp.com/
-//https://wsp-grades-app.herokuapp.com/
-
-// app.get('/', (req, res) => {
-//   res.send('API em execucao');
-// });
 
 https: app.use('/', gradeRouter);
 
